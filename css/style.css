@@ -24,6 +24,39 @@ nav div ul li{
     padding: 0 20px;
 }
 
+
+section:nth-child(2n+2){
+    background-color: rgb(211, 211, 211);
+}
+
+section{
+    padding: 40px 0;
+}
+
+
+section .container-section div:first-child{
+    flex-basis: 60%;
+    background-color: rgb(30, 144, 255);
+    border: 1px dashed black;
+}
+
+section .container-section div:last-child{
+    flex-basis: 40%;
+    background-color: rgb(255, 192, 203);
+    border: 1px dashed black;
+}
+
+section:nth-child(2n+2) .container-section{
+    width: 920px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+    /* ATTENZIONE ALTEZZA ASSEGNATA PER MANCANZA CONTENUTO ! */
+    height: 400px;
+}
+
 .navbar{
     background-color: rgb(173, 216, 230);
     padding: 20px 0;
@@ -42,4 +75,24 @@ nav div ul li{
     height: 300px;
     margin: auto;
     border: 1px dashed black;
+}
+
+.container-section{
+    width: 920px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    /* ATTENZIONE ALTEZZA ASSEGNATA PER MANCANZA CONTENUTO ! */
+    height: 400px;
+}
+
+.container-box{
+    width: 920px;
+    margin: auto;
+    background-color: green;
+    border: 1px dashed black;
+    /* ATTENZIONE ALTEZZA ASSEGNATA PER MANCANZA CONTENUTO ! */
+    height: 400px;
 }
