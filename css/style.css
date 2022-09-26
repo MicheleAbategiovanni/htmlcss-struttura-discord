@@ -81,6 +81,23 @@ footer .footer div:last-child{
     border: 1px dashed black;
 }
 
+footer div ul li a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+}
+
+footer div ul li{
+    list-style-type: none;
+    padding-bottom: 10px;
+    color: white;
+}
+
+h4{
+    color: rgb(114, 137, 218);
+    padding-bottom: 10px
+}
+
 .navbar ul li a{
     text-decoration: none;
     color: white;
@@ -113,6 +130,10 @@ footer .footer div:last-child{
     color: black;
     margin-right: 15px;
     background-color: white;
+}
+
+.bottom.white::before{
+    content: "\2B07";
 }
 
 .bottom-login a{
