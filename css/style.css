@@ -81,6 +81,20 @@ footer .footer div:last-child{
     border: 1px dashed black;
 }
 
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.bottom-login a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px;
+}
+
 .footer-nav div{
     background-color: skyblue;
     flex-basis: 20%;
