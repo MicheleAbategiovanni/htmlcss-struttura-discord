@@ -1,17 +1,21 @@
+:root{
+    --color-font: #23272A;
+
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    color: var(--color-font);
+}
+
 nav{
-    width: 920px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5px;
-    border: 1px dashed black;
-    background-color: rgb(218, 165, 32);
+    background-color: rgb(173, 216, 230); 
+    padding: 20px 0;
 }
 
 nav div ul{
@@ -125,26 +129,27 @@ h4{
 
 .bottom.black{
     color: white;
-    background-color: rgb(35, 39, 42);
+    background-color: var(--color-font);
 }
 
 .bottom.white{
-    color: black;
+    color: var(--color-font);
     margin-right: 15px;
     background-color: white;
 }
 
-.bottom.white::before{
-    content: "\2B07";
-}
-
 .bottom-login a{
     text-decoration: none;
-    color: black;
+    color: var(--color-font);
     border: 1px solid;
     border-radius: 20px;
     background-color: white;
     padding: 5px;
+    text-align: end;
+}
+
+.bottom-login{
+    text-align: end;
 }
 
 .footer-nav div{
@@ -154,9 +159,14 @@ h4{
 }
 
 .navbar{
-    background-color: rgb(173, 216, 230);
-    padding: 20px 0;
-}
+    width: 920px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    border: 1px dashed black;
+    background-color: rgb(218, 165, 32);
+} 
 
 .header{
     background-color: rgb(0, 0, 139);
@@ -216,3 +226,17 @@ h4{
     flex-direction: row;
 }
 
+.link-nav{
+    flex-grow: 1;
+}
+
+.logo-nav,
+.bottom-login{
+    flex-grow: 1;
+}
+
+.violet{
+    background-color: rgb(114, 137, 218);  
+    padding: 5px;
+    color: white;
+}
